@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class LargerNumber
+{
+    public static void main(String args[])
+    {
+        int larger, x, y;
+        Scanner scan = new Scanner(System.in);
+		
+        System.out.print("Enter the first number: ");
+        x = scan.nextInt();
+	System.out.print("Enter the second number: ");
+        y = scan.nextInt();
+		
+        if( x > y)
+        {
+            larger = x;
+        }
+        else
+        {
+            larger = y;
+        }
+		
+        System.out.print("The larger number is " + larger + ".");
+    }
+}

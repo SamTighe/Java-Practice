@@ -1,0 +1,17 @@
+public class AssignmentThree {
+
+public static void main(String[ ] args) {
+
+	int num;
+	float dec;
+
+	num = 17;
+	dec = 16.9f;
+	String drink = new String("Coke");
+
+
+System.out.println("Hello, I hope you are well! It is currently Sept. " + num + " and I am drinking a " + dec + " oz. " + drink + "!");
+
+
+	}
+}

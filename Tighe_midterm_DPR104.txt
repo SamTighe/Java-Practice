@@ -1,0 +1,76 @@
+// Part One Midterm: my address //
+
+public class Midterm {
+ 
+ public static void main(String[] args) {
+  System.out.println("I live at:\n4045 Ellendale Road\nDrexel Hill, PA 19026");
+ }
+ 
+}
+
+--------
+
+
+// Part Two Midterm: integer and float addition //
+
+import java.util.Scanner;
+
+public class Midterm {
+	public static void main (String[] args)	{
+		Scanner scanner = new Scanner(System.in);
+		int a;
+		float b;
+		System.out.print("Enter an integer: ");
+		a = scanner.nextInt();
+		System.out.print("Enter a float number: ");
+		b = scanner.nextFloat();
+		System.out.println(a+b);
+	}
+}
+
+--------
+
+// Part Three Midterm: Random number from 1 - 29 //
+
+import java.util.Random;
+
+public class Midterm {
+	public static void main (String[] args)
+	
+	{
+
+	Random rando = new Random();
+	int x = rando.nextInt(20) + 1;
+	System.out.print (x);
+	}
+}
+
+--------
+
+// Part Four Midterm: Smaller number //
+
+import java.util.Scanner;
+
+public class Midterm{
+    public static void main(String args[])
+    {
+        int smaller, x, y;
+        Scanner scan = new Scanner(System.in);
+		
+        System.out.print("Enter the first number: ");
+        x = scan.nextInt();
+	System.out.print("Enter the second number: ");
+        y = scan.nextInt();
+		
+        if( x > y)
+        {
+            smaller = y;
+        }
+        else
+        {
+            smaller = x;
+        }
+		
+        System.out.print("The smaller number is " + smaller + ".");
+    }
+}

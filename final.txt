@@ -1,0 +1,120 @@
+// Tighe - Final
+
+//Question 1
+#include <iostream>
+using namespace std;
+ 
+int main () {
+   // local variable declaration:
+
+   int grade;
+   cout << "Please enter a high school grade (9-12): ";
+   cin >> grade;
+
+   switch(grade) {
+      case 9 :
+         cout << "Freshman" << endl; 
+         break;
+      case 10 :
+         cout << "Sophmore" << endl;
+         break;
+      case 11 :
+         cout << "Junior" << endl;
+         break;
+      case 12 :
+         cout << "Senior" << endl;
+         break;
+      default :
+         cout << "Please enter a valid grade." << endl;
+   }
+ 
+   return 0;
+}
+
+
+// Question 2
+#include <iostream>
+using namespace std;
+
+int matrix[3][3];
+int main()
+{
+    for(int x=0;x<3;x++)
+    {
+        for(int y=0;y<3;y++)
+        {
+            matrix[x][y]=2;
+        }
+    }
+    for(int x=0;x<3;x++)
+    {
+        for(int y=0;y<3;y++) 
+        {
+            cout<<matrix[x][y]; 
+        }
+    cout<<endl; 
+    }
+    return 0;  
+}
+
+
+// Question 3
+#include <iostream>
+using namespace std;
+
+class rectangle
+{
+private:
+   int length;
+   int width;
+
+public:
+rectangle()
+   {
+   length = 10.0;
+   width = 25.0;
+   }
+double getArea()
+   {
+    return (length * width);
+    }
+};
+int main()
+{
+rectangle rectangle1;
+int num1, num2;
+	cout <<"The length is "<< rectangle1.getLength() << endl;
+	cout <<"The width is " << rectangle1.getWidth() << endl;
+	cout <<"The area is "<< rectangle1.getArea() << endl;
+system("pause");
+return 0;
+}
+
+// Question 4
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main () {
+  ofstream myfile;
+  myfile.open ("grade.txt");
+  myfile << "I want an A!";
+  myfile.close();
+  return 0;
+}
+
+// Question 5
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+  int pointervalue;
+  int * mypointer;
+
+  mypointer = &pointervalue;
+  *mypointer = 55;
+  cout << "The variable is " << pointervalue << endl;
+  cout << "The address is " << &pointervalue << endl;
+  return 0;
+}

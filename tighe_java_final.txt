@@ -1,0 +1,130 @@
+// Tighe Java Final
+
+// Please write a JAVA program that prints out an array of ten ones.
+import java.util.Arrays;
+public class Final {
+    public static void main(String args[]) {
+       int finalArray[]={1,1,1,1,1,1,1,1,1,1};
+
+       System.out.println(Arrays.toString(finalArray));
+    }
+}
+
+---
+
+// Write a java program that inputs a integer and a float and then adds the two numbers and outputs it to the screen
+
+import java.util.Scanner;
+public class finalAdding{
+	public static void main (String[] args)	{
+		Scanner scanner = new Scanner(System.in);
+		int a;
+		float b;
+		System.out.print("Enter first number: ");
+		a = scanner.nextInt();
+		System.out.print("Enter a float number: ");
+		b = scanner.nextFloat();
+		System.out.println("Adding the two gives: " + a+b);
+	}
+}
+
+---
+
+// Please write a java program that displays an ellipse
+
+import java.util.*;
+import java.util.List;
+import java.io.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.*;
+
+public class finalEllipse extends Frame {
+
+  public void paint(Graphics g) {
+     Graphics2D ga = (Graphics2D)g;
+     ga.drawArc(60,60,320,160, 0, 370);
+  }
+              
+  public static void main(String args[]) 
+  {
+      finalEllipse frame = new finalEllipse();       
+      frame.addWindowListener(
+      new WindowAdapter()
+      {
+         public void windowClosing(WindowEvent we)
+         {
+            System.exit(0);
+         }
+      }
+      );
+           
+      frame.setSize(400, 400);
+      frame.setVisible(true);
+   }
+}
+
+---
+
+// Write a java program that prints finds a random number from 1 to 10, and then uses a switch statement to print out a message based on the number
+
+import java.util.Random;
+
+public class randoNum
+{
+	public static void main (String[] args)
+	{
+
+	Random rando = new Random();
+	int x = rando.nextInt(10);
+	System.out.println ("Your random  number is " + x);
+      
+        String xString;
+        switch (x) {
+            case 0:  xString = "Never";
+                     break;
+            case 1:  xString = "Gonna";
+                     break;
+            case 2:  xString = "Give";
+                     break;
+            case 3:  xString = "You";
+                     break;
+            case 4:  xString = "Up";
+                     break;
+            case 5:  xString = "Never";
+                     break;
+            case 6:  xString = "Gonna";
+                     break;
+            case 7:  xString = "Let";
+                     break;
+            case 8:  xString = "You";
+                     break;
+            case 9: xString = "Down";
+                     break;
+            default: xString = "I don't know how this happened";
+                     break;
+        }
+        System.out.println(xString);
+    }
+}
+
+---
+
+// Use a for loop to print out 10,9,8,7,6,5,4,3,2,1 Blast off!!
+
+import java.util.Random;
+
+public class finalBlastOff
+{
+	public static void main (String[] args)
+	{
+
+		for (int i = 10 ; i >= 1; i--) {
+			System.out.print(i + ", ");
+		}
+		System.out.println("Blast off!!");
+ 
+    }
+}
+
+

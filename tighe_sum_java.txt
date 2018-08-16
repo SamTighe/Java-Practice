@@ -1,0 +1,26 @@
+import java.util.*;
+import java.io.InputStream;
+
+public class Sum{
+
+public static void main(String[] args){
+
+	Scanner numInput = new Scanner(System.in);
+	double sum = 0.0;
+	System.out.println("Enter postive numbers you'd like to add together! To quit, enter a negative number!");
+
+	while (numInput.hasNextDouble())
+	{
+            double Num = numInput.nextDouble();
+            if (Num >= 0)
+		{
+                sum += Num;
+		}
+            else
+		{
+                System.out.println("The sum is "+sum);
+                break;
+		}
+        }
+    }
+ }
